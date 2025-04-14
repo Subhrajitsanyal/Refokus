@@ -1,0 +1,15 @@
+import React from 'react'
+import { IoIosReturnRight } from "react-icons/io";
+
+function Button({title = "Get Started"}) {
+  return (
+    <div className=' px-4 py-2 bg-zinc-100 text-black rounded-full flex items-center justify-between w-max cursor-pointer'>
+      <span className='text-sm font-medium'>
+        {title}
+      </span>
+      <IoIosReturnRight className='ml-6' />
+    </div>
+  )
+}
+
+export default Button
